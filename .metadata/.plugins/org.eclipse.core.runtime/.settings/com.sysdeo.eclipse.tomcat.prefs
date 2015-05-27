@@ -1,0 +1,6 @@
+configMode=serverFile
+contextsDir=/usr/local/apache-tomcat-7.0.62/conf/Catalina/localhost
+eclipse.preferences.version=1
+tomcatConfigFile=/usr/local/apache-tomcat-7.0.62/conf/server.xml
+tomcatDir=/usr/local/apache-tomcat-7.0.62
+tomcatVersion=tomcatV7

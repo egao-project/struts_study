@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts-config PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+   "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>	
+ 	<!-- アクションフォームビーン -->
+ 	<!-- アクションフォームビーン名、クラス -->
+	<form-beans type="org.apache.struts.action.ActionFormBean">
+		<form-bean name="registerForm"
+		           type="action.form.RegisterForm"/>
+	</form-beans>
+	<!-- アクションクラス -->
+	<!-- パス、アクションフォームビーン名、スコープ、クラス、遷移元JSP、遷移先JSP -->
+	<action-mappings type="org.apache.struts.action.ActionMapping">
+		<action path="/register"
+		        name="registerForm"
+		        scope="session"
+		        type="action.RegisterAction"
+		        input="/register.jsp">
+			<forward name="success"
+			         path="/complete.jsp"
+			         redirect="false"/>
+		</action>
+	</action-mappings></struts-config>
+<!-- 
+上記例では、/register という名前でリクエストがあった場合、
+・jp.co.infoscience.sample.RegisterForm にリクエストデータを格納 (RegisterForm は session スコープ)
+・jp.co.infoscience.sample.RegisterAction(execute method) を呼び出す
+・jp.co.infoscience.sample.RegisterAction(execute method) 内で success が指定された場合、complete.jsp を表示
+・jp.co.infoscience.sample.RegisterAction(execute method) 内で、自画面再表示が指定された場合、register.jsp を表示 (入力エラーの場合等)
+ -->
+	
+	
+	
+	

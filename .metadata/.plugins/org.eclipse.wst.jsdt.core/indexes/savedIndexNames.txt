@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/Users/ushiki/github/struts_study/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3831311432.index
+1254046123.index
+4091408024.index
+1553152161.index
+3213662.index
+1925842096.index
